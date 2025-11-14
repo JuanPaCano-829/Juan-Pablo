@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Cano Rubio - CV</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .resume {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+            /* [cite: 46] */
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+            /* [cite: 47] */
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+        }
+        .company, .school {
+            font-style: italic;
+            color: #555;
+        }
+        .date {
+            float: right;
+            color: #777;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .skills p {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .languages-grid, .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .lang-item, .cert-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        .lang-item span:first-child, .cert-item span:first-child {
+            font-weight: bold;
+        }
+        
+        /* Clearfix for floated dates */
+        .education-item::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="resume">
+        <header>
+            <h1>JUAN PABLO CANO RUBIO</h1>
+            <p>juanpa2_canorub@outlook.com | +52 5582328866 | https://linkedin.com/in/juanpcanorubio</p>
+        </header>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Computer Engineer with practical experience in development projects and algorithmic solutions using Python and Java.</p>
+            <p>Also experienced in analysis, dashboard creation, and business-oriented storytelling.</p>
+            <p>Passionate about learning emerging technologies and pursuing future specialization in Artificial Intelligence to solve complex challenges at the intersection of technology and innovation.</p>
+        </section>
+
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3 class="job-title">Trainee Consultant</h3>
+                <span class="company">NTT DATA</span>
+                <ul>
+                    <li>Conducted data research and extraction for internal analyses and client-facing reports</li>
+                    <li>Structured insights from interviews and client meetings into concise, actionable summaries</li>
+                    <li>Developed dashboards in Power BI to visualize key performance indicators and client metrics</li>
+                    <li>Designed charts and data visualizations using Excel to support business cases</li>
+                    <li>Created presentations with strong storytelling structure and visual alignment</li>
+                    <li>Drafted and maintained detailed meeting minutes and project documentation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <span class="date">AUG 2024-PRESENT</span>
+                <h3>Makers ITAM</h3>
+                <ul>
+                    <li>Gaining experience in prototyping technologies including 3D printers, laser cutters, scanners, and computer workstations</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>NeuraLab ITAM (Computational Neuroscience)</h3>
+                <ul>
+                    <li>On brain-computer interface experiments and signal processing using EEG and EMG sensors</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>ITAM - Academic Projects</h3>
+                <ul>
+                    <li>Created a full-stack application in Visual Studio using C# and SQL Server for managing relational databases</li>
+                    <li>Built an AI Domino Agent using Python with the Minimax algorithm and heuristics to simulate decision-making in gameplay</li>
+                    <li>Built a Python-based Cryptoarithmetic Solver using Monte Carlo simulation to model and resolve complex logical constraints in AI-driven scenarios</li>
+                    <li>Programmed advanced Excel macros (VBA) for data organization and filtering to support automation and productivity tasks</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <span class="date">AUG 2020-DEC 2026</span>
+                <h3 class="degree">B.S. in Computer Engineering</h3>
+                <span class="school">Instituto Tecnológico Autónomo de México (ITAM)</span>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>Java, Python, SQL, R, PostgreSQL, TablePlus, VS Code, GIT, Pandas, Seaborn, C++, Visual Studio, C#</p>
+        </section>
+
+        <section class="certifications-languages">
+            <h2>Certifications/Languages</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <span>English Certificate</span>
+                    <span>Victoria University (Toronto)</span>
+                </div>
+            </div>
+            <div class="languages-grid">
+                <div class="lang-item">
+                    <span>English</span>
+                    <span>C1+</span>
+                </div>
+                <div class="lang-item">
+                    <span>Spanish</span>
+                    <span>Native</span>
+                </div>
+                <div class="lang-item">
+                    <span>French</span>
+                    <span>A1</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
